@@ -46,25 +46,88 @@
 
     </header>
 
+
+    <main>
+        <br><br>
+        <h1 class="titulo1"> GALERIA DE FOTOS </h1><br><br><br><br><br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="c1" src="../img/foto1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="c1" src="../img/foto2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="c1" src="../img/foto3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <br><br><br>
+    </main>
+
+
+    <footer>
+        <!-- Pie de pagina-->
+        <p class="textfooter1"> Seguinos en nuestras redes sociales!</p> <br>
+        <a href="https://www.instagram.com/Diego.villegas6" target="_blank"><img class="iconored"
+                src="../img/logoinsta.png" alt="logo instagram"></a>
+        <a href="https://www.facebook.com/DiegONvillegas/" target="_blank"><img class="iconored" src="../img/logofb.png"
+                alt="logo facebook"></a>
+        <a href="https://twitter.com/DiegoVillegas07" target="_blank"><img class="iconored" src="../img/logotwitter.png"
+                alt="logo twitter"></a>
+        <br><br><br><br>
+        <span class="textfooter2">Pagina no oficial Fifa Qatar 2022 Copyright DiegoVillegas©</span>
+
+
+    </footer>
+
 </body>
-
-<main></main>
-
-
-<footer>
-    <!-- Pie de pagina-->
-    <p class="textfooter1"> Seguinos en nuestras redes sociales!</p> <br>
-    <a href="https://www.instagram.com/Diego.villegas6" target="_blank"><img class="iconored" src="../img/logoinsta.png"
-            alt="logo instagram"></a>
-    <a href="https://www.facebook.com/DiegONvillegas/" target="_blank"><img class="iconored" src="../img/logofb.png"
-            alt="logo facebook"></a>
-    <a href="https://twitter.com/DiegoVillegas07" target="_blank"><img class="iconored" src="../img/logotwitter.png"
-            alt="logo twitter"></a>
-    <br><br><br><br>
-    <span class="textfooter2">Pagina no oficial Fifa Qatar 2022 Copyright DiegoVillegas©</span>
-
-
-</footer>
-
 
 </html>
