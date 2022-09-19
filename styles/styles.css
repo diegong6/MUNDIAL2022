@@ -48,8 +48,7 @@ ul {
 
 .logo1:hover {
     display: flex;
-    width: 255px;
-    height: 255x;
+    transform: scale(1.1);
     border-radius: 50px;
 }
 
@@ -102,18 +101,33 @@ main {
     font-family: 'Russo One', sans-serif;
     font-size: 100px;
     padding: 30px;
-    background-color: rgba(95, 95, 95, 0.555);
+    background-color: rgba(95, 95, 95, 0.877);
 
 }
 
 .img1 {
     width: 660px;
     height: 450px;
+    transition: 0.5s;
+
+}
+
+.img1:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    border-radius: 30px;
 }
 
 .img2 {
     width: 690px;
     height: 450px;
+    transition: 0.5s;
+}
+
+.img2:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    border-radius: 30px;
 }
 
 .p2 {
@@ -123,7 +137,7 @@ main {
     font-family: 'Russo One', sans-serif;
     font-size: 45px;
     padding: 40px;
-    background-color: rgba(95, 95, 95, 0.555);
+    background-color: rgba(95, 95, 95, 0.877);
 
 
 }
@@ -131,25 +145,36 @@ main {
 
 .p3 {
     display: flex;
+    width: 660px;
     text-align: center;
-    justify-content: left;
+    justify-content: center;
     color: white;
     font-family: 'Russo One', sans-serif;
-    font-size: 30px;
-    padding: 10px;
-    background-color: rgba(95, 95, 95, 0.555);
+    font-size: 40px;
+    padding: 25px;
+    background-color: rgba(95, 95, 95, 0.877);
+    transition: 0.7s;
+}
+
+.p3:hover {
+    color: gold;
 }
 
 .p4 {
     display: flex;
+    width: 690px;
     text-align: center;
-    justify-content: left;
+    justify-content: center;
     color: white;
     font-family: 'Russo One', sans-serif;
-    font-size: 30px;
-    padding: 10px;
-    background-color: rgba(95, 95, 95, 0.555);
+    font-size: 40px;
+    padding: 25px;
+    background-color: rgba(95, 95, 95, 0.877);
+    transition: 0.7s;
+}
 
+.p4:hover {
+    color: gold;
 }
 
 .p5 {
@@ -183,6 +208,34 @@ main {
     color: gold;
     font-family: 'Caveat', cursive;
     font-size: 40px;
+}
+
+.titulogrupos {
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: gold;
+    text-decoration: underline;
+}
+
+.integrantes {
+    justify-content: center;
+    color: #fff;
+    border: 2px solid rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 255, 255));
+    padding: 10px;
+    display: flex;
+
+}
+
+.banderas {
+    width: 35px;
+    height: 35px;
 }
 
 /*FOOTER*/
@@ -260,4 +313,155 @@ footer {
 
 .Parrafomain {
     grid-area: 3 / 1 / 4 / 2;
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    gap: 25px 25px;
+    grid-template-areas:
+        "grupoa grupob"
+        "grupoc grupod"
+        "grupoe grupof"
+        "grupog grupoh";
+}
+
+.grupoa {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupoa;
+}
+
+.grupob {
+    display: grid;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    border: 3px solid black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupob;
+}
+
+.grupoc {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupoc;
+}
+
+.grupod {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupod;
+}
+
+.grupoe {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupoe;
+}
+
+.grupof {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupof;
+}
+
+.grupog {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupog;
+}
+
+.grupoh {
+    display: grid;
+    border: 3px solid black;
+    background-color: rgba(95, 95, 95, 0.877);
+    border-radius: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        ".";
+    grid-area: grupoh;
 }
